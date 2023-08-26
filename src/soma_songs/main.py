@@ -206,6 +206,14 @@ def main():
         help="Where to store the output",
     )
     parser.add_argument(
+        "-m",
+        "--message",
+        dest="message",
+        default=False,
+        action="store_true",
+        help="Write git commit message to outdir/message.txt",
+    )
+    parser.add_argument(
         "-w",
         "--wait",
         dest="wait",
@@ -299,10 +307,17 @@ def main():
         db.upsert(channels[channel]["meta"], Query().id == channel)
 
     console.print(
-        "✨ 🎶 ✨ [bold]All done![/] Added {} entries, see files in {}".format(
+        "✨ 🎶 ✨ [bold]All done![/] Added {} songs, see files in {}".format(
             total_current - total_previous, args.outdir
         )
     )
+    if args.message:
+        with open(outdir.joinpath("message.txt"), "w") as fh:
+            fh.write(
+                "Added {} songs from {} channels, totalling {} songs now".format(
+                    total_current - total_previous, len(channels.keys()), total_current
+                )
+            )
 
 
 if __name__ == "__main__":
