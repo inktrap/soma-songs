@@ -1,6 +1,6 @@
 [project]
 name = "soma-songs"
-version = "1.0.0"
+version = "1.0.1"
 description = "Save song data from somafm.com as JSON"
 authors = [
     {name = "inktrap", email = "inktrap@inktrap.org"},
