@@ -11,14 +11,17 @@ dependencies = [
     "requests>=2.31.0",
     "rich>=13.5.2",
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.8"
 readme = "README.md"
 license = {text = "MIT"}
-keywords = ["somafm", "music", "scraper", "json"]
+keywords = ["music", "scraper", "json", "somafm"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
     "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
 ]
 
