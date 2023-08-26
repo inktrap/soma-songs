@@ -1,0 +1,39 @@
+[project]
+name = "soma-songs"
+version = "0.0.1"
+description = "Save song data from somafm.com as JSON"
+authors = [
+    {name = "inktrap", email = "inktrap@inktrap.org"},
+]
+dependencies = [
+    "beautifulsoup4>=4.12.2",
+    "tinydb>=4.8.0",
+    "requests>=2.31.0",
+    "rich>=13.5.2",
+]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+keywords = ["somafm", "music", "scraper", "json"]
+
+[project.optional-dependencies]
+dev = [
+    "requests-cache>=1.1.0",
+    "pre-commit",
+]
+test = [
+]
+
+[project.urls]
+Homepage = "https://github.com/inktrap/soma-songs"
+# Issues = "https://github.com/inktrap/soma-songs/issues"
+
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+#[project.scripts]
+#my-client = "my_package.my_module:main_cli"
+[project.scripts]
+soma-songs = "soma_songs.main:main"
