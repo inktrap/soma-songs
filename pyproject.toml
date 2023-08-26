@@ -15,6 +15,12 @@ requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
 keywords = ["somafm", "music", "scraper", "json"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3.11",
+]
 
 [project.optional-dependencies]
 dev = [

@@ -2,7 +2,7 @@
 
 [![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm.fming.dev)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![PyPI: Python Version](https://img.shields.io/pypi/pyversions/soma-songs)
+![PyPI: Python Version](https://img.shields.io/pypi/pyversions/soma-songs)
 
 Save songs from <https://somafm.com> as JSON.
 
